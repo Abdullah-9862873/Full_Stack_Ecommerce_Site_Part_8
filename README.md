@@ -529,7 +529,7 @@ We have to crash the Server
 
 If you type "console.log(youtube)" in your "server.js" then it will throw an error which says "youtube is not defined". These type of errors are called uncaught errors.
 
-**Step 45:** Inside the "server.js" file at the top of the file, type the following code
+**Step 45:** Inside the "server.js" file at the top of the file, type the following code. It is important to write it in top because if you write it in bottom and you give **console.log(youtube)** above it then it will not catch that error
 ```
 	// Uncaught Exception Error
 	process.on("uncaughtException", err=>{
@@ -539,7 +539,7 @@ If you type "console.log(youtube)" in your "server.js" then it will throw an err
 	})
 ```
 ## Handling Cast Error Mongodb
-**Step 46:** If you give the less or more number of characters in the id then it will show you a cast error and to handle this error we can write the following code inside the "errorhandler.js" just below the line "err.message = err.message || "Internal Server Error";"
+**Step 46:** If you give the less or more number of characters in the id then it will show you a cast error and to handle this error we can write the following code inside the "error.js" just below the line "err.message = err.message || "Internal Server Error";"
 ```
 	// Mongodb Cast Error Handler
 	    if(err.name === "CastError"){
