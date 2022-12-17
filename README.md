@@ -383,7 +383,7 @@
 
 ## Handling Async Errors
 
-It is a good practice to write .then and .catch inside async await functions. To avoid writing .then and .catch again and again inside the product controller we'll make an error handler for it
+It is a good practice to write try and .catch inside async await functions. To avoid writing try and .catch again and again inside the product controller we'll make an error handler for it. 
 
 **Step 39:** Make a new file inside the "middleware" named "catchAsynErrors.js" and add the following code into it.
 ```
