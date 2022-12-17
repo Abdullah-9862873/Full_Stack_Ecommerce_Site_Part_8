@@ -350,7 +350,8 @@
 	
 				    res.status(err.statusCode).json({
 				        success: false,
-				        message: err.messages
+				        //message: err.stack,
+					message: err.message
 				    })
 				}
 ```
