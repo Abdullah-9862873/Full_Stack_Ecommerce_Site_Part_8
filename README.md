@@ -991,6 +991,7 @@ Rather make a new file named **"jwtToken.js"** in the **"utils"** folder and wri
 
 	module.exports = sendToken;
 ```
+Here the httpsOnly shows that the token can be accessed via browser only and no where else
 
 Now go to the **"userController.js"** file in the **"controllers"** folder and import it first by
 ```
