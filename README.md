@@ -766,6 +766,8 @@ Also add the "productCount" as JSON in "getProductDetails" and update the "getPr
 	module.exports = mongoose.model("User",userSchema);
 ```
 
+**Note: ** Now here you can see that we used object in ***avatar***. And the reason is that in products case, you have alot of products but in case of \ profile picture you have only one so no need to make array.
+
 ## Register a User
 **Step 57:** Make a new file named **"userController.js"** inside **"controllers"**
 
