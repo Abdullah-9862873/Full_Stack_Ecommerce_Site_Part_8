@@ -577,17 +577,21 @@ If you type "console.log(youtube)" in your "server.js" then it will throw an err
 **Step 48:** Update the "getAllProducts" section of "productController.js".
 ```
 	// Get All Products
-	exports.getAllProducts = catchAsyncErrors(async (req, res) => {
-	    const apiFeature = new ApiFeatures(Product.find(), req.query).search();
-	    const products = await apiFeature.query;
+exports.getAllProducts = catchAsyncErrors(async (req, res) => {
+  const resultPerPage = 5;
+  const productCount = await Product.countDocuments();
+  const apiFeature = new ApiFeatures(Product.find(), req.query)
+    .search()
+    .filter()
+    .pagination(resultPerPage);
+  const products = await apiFeature.query;
 
-	    res.status(200).json(
-	        {
-        	    success: true,
-	            products
-	        }
-	    )
-	});
+  res.status(200).json({
+    success: true,
+    products,
+    productCount,
+  });
+});
 ```
 ## Adding filter Section
 **Step 49:** Add the following object below the search() object inside "ApiFeatures" class inside "apifeatures.js".
