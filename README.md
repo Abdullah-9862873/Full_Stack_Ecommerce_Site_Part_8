@@ -184,7 +184,7 @@
 			            }
 			        }
 			    ],
-			    createdAt: {
+			    createdAt: { 
 			        type: Date,
 			        default: Date.now
 			    }
