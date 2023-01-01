@@ -85,7 +85,7 @@
 
 	You'll see the message on the screen inside the postman that "server is working fine"
 
-## Connecting Database
+## Connecting Database 
 
 **Step 18:** Create a folder inside "config", named "database.js"
 
