@@ -1,7 +1,7 @@
 # Full_Stack_Ecommerce_Site_Part_8
 **Step 1:** Make two folders "frontend" and "backend"
  
-**Step 2:** Inside backend create two files "app.js" and "server.js" 
+**Step 2:** Inside backend create two files "app.js" and "server.js"  
 
 **Step 3:** Inside root directory open a terminal and type command, "npm init" and inside the entry point, type "backend/server.js"
 
