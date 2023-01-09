@@ -9,7 +9,7 @@
 
 **Step 5:** Install the package "npm install nodemon"
 
-**Step 6:** Setup the app.js file as 
+**Step 6:** Setup the app.js file as  
 ```
 
 			const express = require("express");
